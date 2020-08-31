@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f9babef56324a32fe92ef1abcf69dfcb",
+    "revision": "946daad406c5ae08509c0f5a513f1de6",
     "url": "/Chit-Chat-client/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Chit-Chat-client/static/css/2.c2bc211b.chunk.css"
   },
   {
-    "revision": "3335e468cfd6be78eb92",
+    "revision": "929869d0a5f0cd6a0cfb",
     "url": "/Chit-Chat-client/static/css/main.5a9426a2.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Chit-Chat-client/static/js/2.f32d2a7d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3335e468cfd6be78eb92",
-    "url": "/Chit-Chat-client/static/js/main.ad8725fd.chunk.js"
+    "revision": "929869d0a5f0cd6a0cfb",
+    "url": "/Chit-Chat-client/static/js/main.d33acbe8.chunk.js"
   },
   {
     "revision": "0ea4289909a2c91ea97b",

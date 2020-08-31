@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Chit-Chat-client/static/css/main.5a9426a2.chunk.css",
-    "main.js": "/Chit-Chat-client/static/js/main.ad8725fd.chunk.js",
-    "main.js.map": "/Chit-Chat-client/static/js/main.ad8725fd.chunk.js.map",
+    "main.js": "/Chit-Chat-client/static/js/main.d33acbe8.chunk.js",
+    "main.js.map": "/Chit-Chat-client/static/js/main.d33acbe8.chunk.js.map",
     "runtime-main.js": "/Chit-Chat-client/static/js/runtime-main.7b1200ad.js",
     "runtime-main.js.map": "/Chit-Chat-client/static/js/runtime-main.7b1200ad.js.map",
     "static/css/2.c2bc211b.chunk.css": "/Chit-Chat-client/static/css/2.c2bc211b.chunk.css",
     "static/js/2.f32d2a7d.chunk.js": "/Chit-Chat-client/static/js/2.f32d2a7d.chunk.js",
     "static/js/2.f32d2a7d.chunk.js.map": "/Chit-Chat-client/static/js/2.f32d2a7d.chunk.js.map",
     "index.html": "/Chit-Chat-client/index.html",
-    "precache-manifest.90984de0a79dc9fec4262a2072294502.js": "/Chit-Chat-client/precache-manifest.90984de0a79dc9fec4262a2072294502.js",
+    "precache-manifest.50692e460fc2577ea542af0d3f4ffd3a.js": "/Chit-Chat-client/precache-manifest.50692e460fc2577ea542af0d3f4ffd3a.js",
     "service-worker.js": "/Chit-Chat-client/service-worker.js",
     "static/css/2.c2bc211b.chunk.css.map": "/Chit-Chat-client/static/css/2.c2bc211b.chunk.css.map",
     "static/css/main.5a9426a2.chunk.css.map": "/Chit-Chat-client/static/css/main.5a9426a2.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.c2bc211b.chunk.css",
     "static/js/2.f32d2a7d.chunk.js",
     "static/css/main.5a9426a2.chunk.css",
-    "static/js/main.ad8725fd.chunk.js"
+    "static/js/main.d33acbe8.chunk.js"
   ]
 }
