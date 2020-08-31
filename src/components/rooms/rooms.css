@@ -1,0 +1,43 @@
+.subBanner {
+    background-color: var(--blue);
+    color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-size: 1.15rem;
+}
+
+.roomButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.chatRooms {
+    padding: 15px;
+}
+
+.roomContainer {
+    margin: auto;
+    padding: 10px;
+    background: linear-gradient(white 30%, var(--lightBlue) 90%, var(--blue));
+    box-shadow: var(--gray) 3px 3px 5px;
+    color: var(--deepDarkBlue);
+    text-align: left;
+    min-height: 35px;
+} 
+
+.roomGrid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 10px;
+    row-gap: 10px;    
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 520px) {
+    .roomGrid {
+        font-size: 0.95rem;
+        grid-template-columns: repeat(2, auto);
+    } 
+}  

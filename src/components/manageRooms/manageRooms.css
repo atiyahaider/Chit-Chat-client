@@ -1,0 +1,25 @@
+.roomItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0px;
+    min-height: 35px;
+}
+
+.roomItem input {
+    padding: 0px 0px 2px;
+    font-size: 1rem;
+    margin-bottom: 2px;
+    width: calc(100% - 90px);
+}
+
+#saveIcon {
+    color: var(--green);
+}
+
+#cancelIcon {
+    color: red;
+}
+
+#saveIcon:hover, #cancelIcon:hover {
+    color: var(--purple);
+}

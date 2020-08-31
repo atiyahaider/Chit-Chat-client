@@ -1,0 +1,19 @@
+#intro {
+    font-size: 1.15rem;
+    color: var(--medBlue);
+}
+
+#loginMsg {
+    font-size: 1.35rem;
+    color: var(--darkBlue);
+}
+
+@media screen and (max-width: 520px) {
+    #intro {
+        font-size: 1.075rem;
+    }
+
+    #loginMsg {
+        font-size: 1.2rem;
+    }
+}

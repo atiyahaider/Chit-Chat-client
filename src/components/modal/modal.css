@@ -1,0 +1,68 @@
+#innerModalDiv {
+    border: 2px solid var(--medBlue);
+    border-radius: 2px;
+    height: 100%;
+}
+
+#closeDiv {
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+    border-bottom: 2px solid var(--medBlue);
+    color: var(--darkBlue);
+}
+
+#close {
+    color: var(--purple);
+}
+
+#modalContent {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items:center;
+   height: 109px;
+   background-color: var(--lightBlue);
+   background: linear-gradient(white 30%, var(--lightBlue) 90%, var(--blue));
+   color: var(--deepDarkBlue);
+   border: 1px solid var(--medBlue);
+   padding: 3px;
+}
+
+#modalText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modalButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.modalButtons button {
+    width: 55px;
+    padding: 4px 0px;
+    margin: 0px 10px 5px;
+    border-radius: 3px;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+  

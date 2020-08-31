@@ -1,0 +1,88 @@
+#chats {
+    max-height: calc(100% - 50px);
+    min-height: calc(100% - 50px);
+    overflow-y: auto;
+    padding: 10px;
+    background: linear-gradient(white 30%, var(--lightBlue) 90%, var(--blue));
+    box-shadow: var(--gray) 3px 3px 5px;
+    border-radius: 2px;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox'] {
+    margin: 5px;
+}
+
+.message {
+    padding: 5px;
+    margin: 5px;
+    width: fit-content;
+}
+
+.myMessage {
+    background-color: var(--green);
+    border-radius: 10px 10px 1px 10px;
+    margin-left: auto; 
+    margin-right: 0px;
+    order: 1;
+}
+
+.myCheckbox {
+    order: 2;
+}
+
+.chatMessage {
+    background-color: var(--blue);
+    border-radius: 10px 10px 10px 1px;
+    order: 2;
+}
+
+.chatCheckbox {
+    order: 1;
+}
+
+.adminMessage {
+    background-color: var(--medGray);
+    border-radius: 10px;
+    margin: 5px auto;
+}
+
+.credentials {
+    font-size: 0.6rem;
+    color: var(--deepDarkBlue);
+}
+
+.messageContent {
+    color: white;
+    font-size: 0.75rem;
+}
+
+.messageDeleted {
+    font-style: italic;
+}
+
+.messageContent img {
+    max-width: 300px;
+    border-radius: 3px;
+    margin-top: 2px;
+}
+
+/* unvisited link */
+.messageContent a:link {
+    color: blue;
+}
+
+/* visited link */
+.messageContent a:visited {
+    color: purple;
+}
+
+@media screen and (max-width: 520px) {
+    .messageContent img {
+        max-width: 200px;
+    }
+}

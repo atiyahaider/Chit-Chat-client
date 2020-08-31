@@ -1,0 +1,28 @@
+#messageForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+#message {
+    width: 95%;
+    border: 1px solid var(--medBlue); 
+    background-color: white;
+    padding: 5px;
+}
+
+#message:focus {
+    border: 1px solid var(--darkBlue);
+}
+
+.emojiPicker {
+    position: absolute;
+    bottom: 65px;
+    right: 15px;
+}
+
+.emojiButton {
+    float: right;
+    border: none;
+    margin: 5px 0px;
+    cursor: pointer;
+}

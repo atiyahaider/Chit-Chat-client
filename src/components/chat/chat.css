@@ -1,0 +1,98 @@
+#topContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 15px;
+}
+
+#spinnerContainer {
+    width: 300px;
+}
+
+#chatButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.rightButtons {
+    margin-left: auto;
+}
+
+#chatroomContent {
+    display: flex;
+    min-height: calc(100vh - 95px);
+    max-height: calc(100vh - 95px);
+}
+
+#sidePanel {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-right: 2px solid var(--blue);
+    padding: 0px 15px 15px;
+}
+
+#room {
+    color: var(--darkBlue);
+    padding-bottom: 13px; 
+    border-bottom: 2px solid var(--blue);
+    text-align: left;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+#subHeading {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: var(--medBlue);
+    color: var(--purple);
+    padding: 10px 0px;
+}
+
+#chatContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0px 15px 15px;
+    width: 100%;
+}  
+
+#leaveIcon {
+    font-size: 1.56rem;
+}
+
+.icon-stack {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+  }
+
+.icon-stack-1x,
+.icon-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+.icon-stack-1x {
+    line-height: 20px;
+    font-size: 0.75em;
+    transform: rotate(8deg);
+    color: red;
+}
+
+@media screen and (max-width: 520px) {
+    .leftButtons {
+        text-align: left;
+    }
+    .rightButtons {
+        text-align: right;
+    }
+}

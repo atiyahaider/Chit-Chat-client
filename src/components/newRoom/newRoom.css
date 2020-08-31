@@ -1,0 +1,22 @@
+#newRoomDiv {
+    text-align: right;
+}
+
+#newRoom {
+    width: 400px;
+    border: 1px solid var(--medBlue); 
+    background-color: white;
+    padding: 5px;
+}
+
+@media screen and (max-width: 630px) {
+    #newRoom {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #newRoom {
+        width: 200px;
+    }
+}

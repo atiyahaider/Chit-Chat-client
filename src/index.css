@@ -1,0 +1,180 @@
+:root {
+  --paleBlue: #ddebed;
+  --lightBlue: #cde2e5;
+  --blue: #abced3;
+  --medBlue: #69a8b0;
+  --darkBlue: #41747c;
+  --deepDarkBlue: #355f64;
+  --gray: #a08c8c;
+  --medGray: #bfbfbf;
+  --lightGray: #ddd;
+  --green: #8cc653;
+  --purple: #8e578e; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--paleBlue);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: auto;
+  margin-top: 40px;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  background: linear-gradient(white 30%, var(--lightBlue) 90%, var(--blue));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: var(--gray) 3px 3px 5px;
+  border-radius: 2px;
+}
+
+.heading {
+  color: var(--deepDarkBlue);
+  font-size: 2.5rem;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  color: var(--medBlue);
+}
+
+.inputField:focus-within   {
+  color: var(--darkBlue);
+}
+
+label {
+  text-align: left;
+  font-weight: 600;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid var(--medBlue); 
+  padding: 5px 0px 1px;
+  background: transparent;
+  color: var(--medBlue);
+  font-size: 0.95rem;
+}
+
+input:focus {
+  outline: none;
+  color: var(--darkBlue);
+  border-bottom: 1px solid var(--darkBlue); 
+}
+
+/* to remove the background color on auto-complete */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--medBlue) !important;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--darkBlue) !important;
+}
+
+button {
+  background-color: var(--medBlue);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button:focus { 
+  outline: none; 
+}
+
+button:hover {
+  background-color: var(--darkBlue);
+}
+
+button:disabled {
+  background-color: var(--gray);
+  cursor: default;
+}
+
+.largeButton {
+  width: 130px;
+  padding: 5px;
+  margin: 15px;
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.smallButton {
+  padding: 5px 15px;
+  margin: 5px 0px 5px 5px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  background: none;
+  color: var(--medBlue);
+  margin: 0px 5px;
+  font-size: 1.25rem;
+  width: 25px;
+  height: 25px;
+}
+
+.icon:hover {
+  background: none;
+  color: var(--darkBlue);
+}
+
+.footNote {
+  font-size: 0.85em;
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    width: 430px;
+    height: 430px;
+    padding: 10px;
+  }
+ 
+  .heading {
+    font-size: 2rem;
+  }
+ 
+  .inputField {
+    margin: 10px;
+  }
+
+  .largeButton {
+    width: 100px;
+    margin: 10px;
+    font-size: 1rem;
+  }
+
+  .smallButton {
+    font-size: 0.80rem;
+    padding: 5px 10px;
+  }
+}
