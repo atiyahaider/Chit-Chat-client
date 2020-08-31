@@ -7,3 +7,4 @@ Send instant messages, emojis, and pictures.
 https://atiyahaider.github.io/Chit-Chat-client/
 
 Server side APIs: Chit-Chat-Server
+https://github.com/atiyahaider/Chit-Chat-server
