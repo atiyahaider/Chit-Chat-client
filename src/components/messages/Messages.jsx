@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { formatDate } from '../../utils/formatDate';
 import {emojify} from 'react-emojione';
 import { EmojiOptions } from '../../constants';
@@ -7,14 +7,14 @@ import './messages.css';
 
 
 const Messages = ({ messages, email, deleteMessages, checkboxes, handleCheckboxChange }) => {
-    
+    const chatRef = useRef();
     useEffect(() => {
-        const chatDiv = document.getElementById('chats');
-        chatDiv.scrollTop = chatDiv.scrollHeight;
+        if (!deleteMessages)
+            chatRef.current.scrollTop = chatRef.current.scrollHeight;
     })
 
     return (  
-        <div id='chats'>
+        <div id='chats' ref={chatRef}>
             {messages ? 
                 messages.map( (msg, i) => 
                     <div className='chat' key={msg._id}>
@@ -30,15 +30,16 @@ const Messages = ({ messages, email, deleteMessages, checkboxes, handleCheckboxC
                                 <p className='credentials'>{msg.name}, {formatDate(msg.date)}</p>                                
                             }
                             <p className={'messageContent' + (msg.name === '' && msg.date === '' ? ' messageDeleted' : '')}>
-                                { msg.message.indexOf('base64') !== -1 ?
+                                { msg.type === 'txt' &&
+                                    <ReactTextFormat allowedFormats={['URL', 'Email', 'Image']} linkTarget='_blank'>
+                                        {emojify(msg.message, EmojiOptions)}
+                                    </ReactTextFormat>
+                                }
+                                { msg.type === 'image' &&
                                     <img src={msg.message} alt=''/>
-                                    : 
-                                    msg.type === 'video' ?
-                                        <video src="' + msg.message + '" width="320" height="240" controls></video>
-                                        :
-                                        <ReactTextFormat allowedFormats={['URL', 'Email', 'Image']} linkTarget='_blank'>
-                                            {emojify(msg.message, EmojiOptions)}
-                                        </ReactTextFormat>
+                                }
+                                { msg.type === 'video' &&
+                                    <video src={msg.message} controls></video>
                                 }
                             </p>
                         </div>

@@ -193,7 +193,6 @@ const useSocket = (setSessionError, setNoOfMsgs) => {
     };
 
     const emitMessage = message => {
-        console.log(message)
         return new Promise((resolve, reject) => 
             socketRef.current.emit('newMessage', message, error => {
                 if (error) 

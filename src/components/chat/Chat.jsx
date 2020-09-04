@@ -78,7 +78,7 @@ const Chat = () => {
 
         setIsLoading(true);
         try {
-            await emitMessage({roomId, email, name, message});
+            await emitMessage({roomId, email, name, message, type: 'txt'});
         } catch(err) {
             setModalContent({ type: 'Error', content: err });
         }
@@ -143,11 +143,14 @@ const Chat = () => {
         emitStopTyping(roomId, email, name);
     }
 
-    const uploadImage = (imageFile) => {
-        console.log(imageFile.type)
-        if (!imageFile || (!imageFile.type.match('image.*'))) {
-        // && !imageFile.type.match('video.*'))) {
-            setModalContent({ type: 'Error', content: 'Please select an image file' });
+    const uploadImage = (uploadFile) => {
+        if (!uploadFile || (!uploadFile.type.match('image.*') && !uploadFile.type.match('video.*'))) {
+            setModalContent({ type: 'Error', content: 'Please select an image or video file' });
+            return;
+        }
+        
+        if (uploadFile.size > 62914560) {
+            setModalContent({ type: 'Error', content: 'Files more than 60MB not allowed' });
             return;
         }
 
@@ -156,15 +159,15 @@ const Chat = () => {
         reader.addEventListener('load', async () => {
             setIsLoading(true);
             let image = reader.result;
-            let imageType = imageFile.type.match('image.*') ? 'image' : 'video';
+
             try {
-                await emitMessage({ roomId, email, name, message: image, type: imageType });
+                await emitMessage({ roomId, email, name, message: image, type: uploadFile.type });
             } catch(err) {
                 setModalContent({ type: 'Error', content: err });
             }
             setIsLoading(false);
         });
-        reader.readAsDataURL(imageFile);
+        reader.readAsDataURL(uploadFile);
     }
 
     return (

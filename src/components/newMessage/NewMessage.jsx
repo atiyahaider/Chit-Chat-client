@@ -80,7 +80,7 @@ const NewMessage = ({ sendMessage, isLoading, handleEmitTyping, handleEmitStopTy
                     <i className="fas fa-paper-plane"></i>
                 </button>
 
-                <input type='file' onChange={getFileName} accept='image/*' style={{display: 'none'}} ref={imageFileRef}/>
+                <input type='file' onChange={getFileName} accept='image/*, video/*' style={{display: 'none'}} ref={imageFileRef}/>
                 <button className='icon' ref={imageBtnRef} onClick={handleUploadImage}>
                     <i className="fas fa-paperclip"></i>
                 </button>

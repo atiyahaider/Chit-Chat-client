@@ -81,8 +81,16 @@ input[type='checkbox'] {
     color: purple;
 }
 
+.messageContent video {
+    width: 300px;
+    margin-top: 2px;
+}
+
 @media screen and (max-width: 520px) {
     .messageContent img {
         max-width: 200px;
+    }
+    .messageContent video {
+        width: 200px;
     }
 }
