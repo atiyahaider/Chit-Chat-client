@@ -1,6 +1,6 @@
 export  const LOCAL_STORAGE = 'ChitChat';
-export  const BASE_URL = 'http://localhost:8080';
-//export  const BASE_URL = 'https://chit-chat12.herokuapp.com';
+//export  const BASE_URL = 'http://localhost:8080';
+export  const BASE_URL = 'https://chit-chat12.herokuapp.com';
 export  const API_URL = BASE_URL + '/api';
 
 export const EMAIL_REGEX = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
