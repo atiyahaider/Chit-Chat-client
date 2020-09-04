@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Chit-Chat-client/precache-manifest.c3f0d4f739ac80f11cb06dcd9c14be80.js"
+  "/Chit-Chat-client/precache-manifest.2ab43d0275c7fc18eac37acbe155eed7.js"
 );
 
 self.addEventListener('message', (event) => {
