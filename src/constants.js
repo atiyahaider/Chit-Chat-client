@@ -1,5 +1,5 @@
 export  const LOCAL_STORAGE = 'ChitChat';
-//export  const BASE_URL = 'http://localhost:8080';
+// export  const BASE_URL = 'http://localhost:8080';
 export  const BASE_URL = 'https://chit-chat12.herokuapp.com';
 export  const API_URL = BASE_URL + '/api';
 
